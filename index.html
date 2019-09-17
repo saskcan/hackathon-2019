@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/dark.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Jquery -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+
+    <!-- import the webpage's javascript file -->
+    <script src="/data.js" defer></script>
+    <script src="/chart1.js" defer></script>
+    <script src="/chart2.js" defer></script>
+    <script src="/listeners.js" defer></script>
+    
+  </head>  
+  <body>
+    <div class="container">
+      <!-- clickable map container -->
+      <img src="https://cdn.glitch.com/1c8a8d95-4afb-42f6-93f0-f29e8e918690%2Fbc_regions.png?v=1568746718179" usemap="#image-map">
+
+      <map name="image-map">
+          <area target="" alt="Stikine Region" title="Stikine Region" href="" coords="5,0,27,64,87,41,125,128,229,141,228,184,247,203,259,214,242,235,325,239,289,214,253,178,273,155,299,137,267,48" shape="poly">
+          <area target="" alt="Northern Rockies" title="Northern Rockies" href="" coords="274,49,311,133,339,141,344,155,455,149,456,55,355,55" shape="poly">
+          <area target="" alt="Kitimat-Stikine" title="Kitimat-Stikine" href="" coords="131,133,225,146,224,187,249,214,233,242,271,277,271,289,245,290,237,340,254,376,254,397,208,406,210,345,205,293,168,292,199,232,145,198" shape="poly">
+          <area target="" alt="Alberni-Clayoquot" title="Alberni-Clayoquot" href="" coords="271,560,279,552,308,556,325,562,334,576,332,581,333,587,324,598,296,583" shape="poly">
+          <area target="" alt="Bulkley-Nechako" title="Bulkley-Nechako" href="" coords="248,244,342,249,366,286,352,297,352,321,372,365,324,368,322,387,273,389,244,339,260,316,250,305,260,290,279,286,277,265" shape="poly">
+          <area target="" alt="Capital" title="Capital" href="" coords="337,603,340,594,365,603,373,592,379,610,370,622,341,614" shape="poly">
+          <area target="" alt="Cariboo" title="Cariboo" href="" coords="275,392,325,392,328,369,367,368,368,379,385,379,423,369,457,389,453,410,458,438,448,458,392,460,357,487,313,464,321,443,310,440,319,413,296,405,285,408" shape="poly">
+          <area target="" alt="Central Coast" title="Central Coast" href="" coords="219,409,273,396,284,414,306,415,287,461,241,474,220,445" shape="poly">
+          <area target="" alt="Central Kootenay" title="Central Kootenay" href="" coords="556,577,556,558,532,556,529,519,536,497,558,497,553,477,567,481,601,569" shape="poly">
+          <area target="" alt="Central Okanagan" title="Central Okanagan" href="" coords="473,532,497,547,513,527,483,516" shape="poly">
+          <area target="" alt="Columbia-Shuswap" title="Columbia-Shuswap" href="" coords="570,479,582,453,527,402,479,500,491,505,513,478,534,496,553,494,545,477" shape="poly">
+          <area target="" alt="Comox Valley" title="Comox Valley" href="" coords="305,552,317,538,335,557,327,562" shape="poly">
+          <area target="" alt="Cowichan Valley" title="Cowichan Valley" href="" coords="326,603,337,578,366,576,381,588,366,599,342,589,335,609" shape="poly">
+          <area target="" alt="East Kootenay" title="East Kootenay" href="" coords="574,483,586,455,658,553,604,569" shape="poly">
+          <area target="" alt="Fraser Valley" title="Fraser Valley" href="" coords="403,583,396,554,386,538,401,524,437,530,449,578" shape="poly">
+          <area target="" alt="Fraser-Fort George" title="Fraser-Fort George" href="" coords="506,426,523,402,355,242,357,264,369,285,354,300,356,318,377,374,430,359" shape="poly">
+          <area target="" alt="Metro Vancouver" title="Metro Vancouver" href="" coords="402,585,392,551,370,560,383,584" shape="poly">
+          <area target="" alt="Kootenay Boundary" title="Kootenay Boundary" href="" coords="500,577,500,552,513,534,527,534,531,558,554,561,555,577" shape="poly">
+          <area target="" alt="Mount Waddington" title="Mount Waddington" href="" coords="227,523,257,513,276,535,310,483,313,453,301,438,291,465,236,478,215,495" shape="poly">
+          <area target="" alt="Nanaimo" title="Nanaimo" href="" coords="331,565,341,560,360,573,337,577" shape="poly">
+          <area target="" alt="North Okanagan" title="North Okanagan" href="" coords="486,510,515,483,532,499,522,529" shape="poly">
+          <area target="" alt="Okanagan-Similkameen" title="Okanagan-Similkameen" href="" coords="453,582,444,546,474,536,499,551,500,576" shape="poly">
+          <area target="" alt="Peace River" title="Peace River" href="" coords="463,336,458,153,285,155,266,185,350,245,354,234" shape="poly">
+          <area target="" alt="Squamish-Lillooet" title="Squamish-Lillooet" href="" coords="373,554,391,550,383,533,415,507,425,482,388,472,356,495,358,518" shape="poly">
+          <area target="" alt="Strathcona" title="Strathcona" href="" coords="231,527,255,520,274,536,315,471,353,489,330,503,316,536,265,554" shape="poly">
+          <area target="" alt="Sunshine Coast" title="Sunshine Coast" href="" coords="340,550,353,517,371,556,360,563" shape="poly">
+          <area target="" alt="Thompson-Nicola" title="Thompson-Nicola" href="" coords="409,522,428,481,394,471,447,462,463,401,505,428,477,497,482,508,447,541,440,527" shape="poly">
+          <area target="" alt="Powell River" title="Powell River" href="" coords="323,534,335,505,356,494,357,510,338,547" shape="poly">
+          <area target="" alt="Skeena-Queen Charlotte" title="Skeena-Queen Charlotte" href="" coords="143,420,207,355,197,296,77,304,96,382" shape="poly">
+      </map>
+    </div>
+    <div class="container" data-region="16">
+      <h1>
+        Metro Vancouver
+      </h1>
+
+      <div class="chart-container chart-1-container">
+        <div class="header"><p>Fair Market Value</p></div>
+        <div id="chart1div"></div>
+      </div>
+      <div class="chart-container chart-2-container">
+        <div class="header"><p>Chart 2</p></div>
+        <div id="chart2div"></div>
+      </div>
+    </div>
+  </body>
+</html>
